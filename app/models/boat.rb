@@ -9,5 +9,7 @@ class Boat < ActiveRecord::Base
   end
 
   def self.dinghy
+    all.map {|item| item.length < 20}
   end
 end
+
