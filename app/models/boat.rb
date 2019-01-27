@@ -12,4 +12,3 @@ class Boat < ActiveRecord::Base
     all.map {|item| item.length < 20}
   end
 end
-
